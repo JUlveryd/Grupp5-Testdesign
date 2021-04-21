@@ -26,3 +26,18 @@ Feature: Allround scoring system
     And I have input Performance <value>
     When I press Save
     Then the result <value> shod be saved
+    
+    @Prio8
+  Scenario: As an official i want to be able to see all the current scores at any time
+    Given I have entered a competitors name
+    And I have entered competitors score
+    And I have saved the data
+    When I press show data I should be able to see the data 
+    Then I should be able to 
+
+  @Prio11
+  Scenario: As an official I want to be able to stop the program after each time a score is saved.
+    Given I have entered a competitors name
+    And I have entered competitors score
+    And I have saved the data
+    Then I should be able to stop the program

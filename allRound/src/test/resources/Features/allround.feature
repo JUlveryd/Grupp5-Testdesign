@@ -19,3 +19,10 @@ Feature: Allround scoring system
       | name  | value | status  |
       | name1 |     5 | success |
       | name2 |     7 | Fail    |
+
+  @mytag3
+  Scenario: Performance value
+    Given I have Performance results <value>
+    And I have input Performance <value>
+    When I press Save
+    Then the result <value> shod be saved

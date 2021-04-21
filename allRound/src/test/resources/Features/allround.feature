@@ -26,5 +26,3 @@ Feature: Allround scoring system
     And I have input Performance <value>
     When I press Save
     Then the result <value> shod be saved
-
-    TEsting

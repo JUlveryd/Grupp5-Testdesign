@@ -41,3 +41,16 @@ Feature: Allround scoring system
     And I have entered competitors score
     And I have saved the data
     Then I should be able to stop the program
+
+    @Prio7
+    Scenario: As an official I want to be able to save a competitors score.
+     Given I have chosen a competitor
+     And I have mark his score
+     And I have saved the score
+     Then I should be able to see the saved score in a excel file
+
+    @Prio12
+    Scenario: The program should save the score tabel into a excel file where the officials can see the live score.
+     Given The score should be in excel file
+     And the score is saved into a excel file
+     Then the officials should be able to see it in the excel file

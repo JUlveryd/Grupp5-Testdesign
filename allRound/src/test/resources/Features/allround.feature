@@ -41,3 +41,4 @@ Feature: Allround scoring system
     And I have entered competitors score
     And I have saved the data
     Then I should be able to stop the program
+    Then I test

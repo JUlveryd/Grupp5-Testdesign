@@ -2,7 +2,7 @@ Feature: Allround
   I want to use this template for my feature file
 
   @tag1
-  Scenario: Title of your scenario
+  Scenario: As an official I want to be able to add competitors
     Given I want to write a step with precondition
     And some other precondition
     When I complete action

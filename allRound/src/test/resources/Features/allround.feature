@@ -1,5 +1,4 @@
-Feature: Allround
-  I want to use this template for my feature file
+Feature: Allround scoring system
 
   @tag1
   Scenario: As an official I want to be able to add competitors
@@ -7,7 +6,6 @@ Feature: Allround
     And some other precondition
     When I complete action
     And some other action
-    And yet another action
     Then I validate the outcomes
     And check more outcomes
 

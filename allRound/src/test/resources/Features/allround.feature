@@ -2,12 +2,9 @@ Feature: Allround scoring system
 
   @Prio1
   Scenario: As an official I want to be able to add competitors
-    Given
-    And some other precondition
-    When I complete action
-    And some other action
-    Then I validate the outcomes
-    And check more outcomes
+    Given I have opened the program
+    When I enter a competitors name
+    Then Competitors name is saved
 
   @Prio2
   Scenario Outline: Title of your scenario outline
@@ -34,6 +31,12 @@ Feature: Allround scoring system
     And I have saved the data
     When I press show data I should be able to see the data
     Then I should be able to
+
+  @Prio9
+  Scenario: As an official I want to be able see a competitors score whenever I want
+    Given I have chosen a competitor
+    When I press show data for a specific competitor
+    Then I should be able to see the competitors score
 
   @Prio11
   Scenario: As an official I want to be able to stop the program after each time a score is saved.

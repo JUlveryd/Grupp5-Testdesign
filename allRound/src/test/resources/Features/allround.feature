@@ -26,26 +26,26 @@ Feature: Allround scoring system
     
   @Prio3
   Scenario: As an official I want the decathlon track scoring used 
-    Given I have entered the competitors performance value
-    When I press the button    
+    Given I have entered the competitors performance <value>
+    When I press the <button>    
     Then I should see the competitors score
     
   @Prio4
   Scenario: As an official I want the decathlon field scoring used 
-    Given I have entered the competitors performance value
-    When I press the button    
+    Given I have entered the competitors performance <value>
+    When I press the <button>    
     Then I should see the competitors score
     
   @Prio5
   Scenario: As an official I want the heptathlon track scoring used 
-    Given I have entered the competitors performance value
-    When I press the button    
+    Given I have entered the competitors performance <value>
+    When I press the <button>    
     Then I should see the competitors score
     
   @Prio6
   Scenario: As an official I want the heptathlon field scoring used 
-    Given I have entered the competitors performance value
-    When I press the button    
+    Given I have entered the competitors performance <value>
+    When I press the <button>    
     Then I should see the competitors score
 
   @Prio7

@@ -43,3 +43,4 @@ Feature: Allround scoring system
     Then I should be able to stop the program
 
     Test igen
+    test 2

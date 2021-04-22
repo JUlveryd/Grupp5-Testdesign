@@ -2,7 +2,7 @@ Feature: Allround scoring system
 
   @Prio1
   Scenario: As an official I want to be able to add competitors
-    Given I want to write a step with precondition
+    Given
     And some other precondition
     When I complete action
     And some other action

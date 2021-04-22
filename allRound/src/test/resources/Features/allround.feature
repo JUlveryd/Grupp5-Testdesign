@@ -51,28 +51,27 @@ Feature: Allround scoring system
     And I have saved the data
     When I press show data I should be able to see the data
 
-  @Prio9
-  Scenario: As an official I want to be able see a competitors score whenever I want
-    Given I have chosen a competitor by <name>
-    When I press "show score" for a specific competitor
-    Then The competitors score is displayed as <score>
-
-  @prio10
+  @prio09
   Scenario: Resume the program after it was stopped.
     Given that the program is stopped
     Then  press start
     Then  the program is runing
 
-  @Prio11
+  @Prio10
   Scenario: As an official I want to be able to stop the program after each time a score is saved.
     Given I have entered a competitors name
     And I have entered competitors score
     And I have saved the data
     Then I should be able to stop the program
 
-  @Prio12
+  @Prio11
   Scenario: The program should save the score tabel into a excel file where the officials can see the live score.
     Given The score should be in excel file
     And the score is saved into a excel file
     Then the officials should be able to see it in the excel file
 
+  @Prio12
+  Scenario: As an official I want to be able see a competitors score whenever I want
+    Given I have chosen a competitor by <name>
+    When I press "show score" for a specific competitor
+    Then The competitors score is displayed as <score>

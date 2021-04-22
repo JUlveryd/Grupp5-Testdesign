@@ -1,7 +1,7 @@
 Feature: Allround scoring system
 
   @Prio1
-  Scenario: As an official I want to be able to add competitors
+  Scenario: As an official I want to be able to add competitors + en liten ändring
     Given I want to write a step with precondition
     And some other precondition
     When I complete action

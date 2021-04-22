@@ -53,5 +53,7 @@ Feature: Allround scoring system
   Scenario: The program should save the score tabel into a excel file where the officials can see the live score.
     Given The score should be in excel file
     And the score is saved into a excel file
-    Then the officials should be able to see it in the excel file
+    And the officials should be able to see it in the excel file
+    Then the officials and competitors can see their live score
+
 

@@ -2,12 +2,9 @@ Feature: Allround scoring system
 
   @Prio1
   Scenario: As an official I want to be able to add competitors
-    Given
-    And some other precondition
-    When I complete action
-    And some other action
-    Then I validate the outcomes
-    And check more outcomes
+    Given I have opened the program
+    When I have entered a competitors name <name>
+    Then Competitors name is saved
 
   @Prio2
   Scenario Outline: Title of your scenario outline
@@ -51,6 +48,13 @@ Feature: Allround scoring system
     When I press the button    
     Then I should see the competitors score
 
+  @Prio7
+  Scenario: As an official I want to be able to save a competitors score.
+    Given I have chosen a competitor
+    And I have mark his score
+    And I have saved the score
+    Then I should be able to see the saved score in a excel file
+
   @Prio8
   Scenario: As an official i want to be able to see all the current scores at any time
     Given I have entered a competitors name
@@ -58,19 +62,18 @@ Feature: Allround scoring system
     And I have saved the data
     When I press show data I should be able to see the data
 
+  @Prio9
+  Scenario: As an official I want to be able see a competitors score whenever I want
+    Given I have chosen a competitor by <name>
+    When I press "show score" for a specific competitor
+    Then The competitors score is displayed as <score>
+
   @Prio11
   Scenario: As an official I want to be able to stop the program after each time a score is saved.
     Given I have entered a competitors name
     And I have entered competitors score
     And I have saved the data
     Then I should be able to stop the program
-
-  @Prio7
-  Scenario: As an official I want to be able to save a competitors score.
-    Given I have chosen a competitor
-    And I have mark his score
-    And I have saved the score
-    Then I should be able to see the saved score in a excel file
 
   @Prio12
   Scenario: The program should save the score tabel into a excel file where the officials can see the live score.

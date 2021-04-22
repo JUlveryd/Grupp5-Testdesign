@@ -7,45 +7,34 @@ Feature: Allround scoring system
     Then Competitors name is saved
 
   @Prio2
-  Scenario Outline: Title of your scenario outline
-    Given I want to write a step with <name>
-    When I check for the <value> in step
-    Then I verify the <status> in step
-
-    Examples:
-      | name  | value | status  |
-      | name1 | 5     | success |
-      | name2 | 7     | Fail    |
-
-  @Prio3
-  Scenario: Performance value
+  Scenario: As an offical i want to enter a performance value
     Given I have Performance results <value>
     And I have input Performance <value>
     When I press Save
     Then the result <value> shod be saved
-    
+
   @Prio3
-  Scenario: As an official I want the decathlon track scoring used 
+  Scenario: As an official I want the decathlon track scoring used
     Given I have entered the competitors performance <value>
-    When I press the <button>    
+    When I press the <button>
     Then I should see the competitors score
-    
+
   @Prio4
-  Scenario: As an official I want the decathlon field scoring used 
+  Scenario: As an official I want the decathlon field scoring used
     Given I have entered the competitors performance <value>
-    When I press the <button>    
+    When I press the <button>
     Then I should see the competitors score
-    
+
   @Prio5
-  Scenario: As an official I want the heptathlon track scoring used 
+  Scenario: As an official I want the heptathlon track scoring used
     Given I have entered the competitors performance <value>
-    When I press the <button>    
+    When I press the <button>
     Then I should see the competitors score
-    
+
   @Prio6
-  Scenario: As an official I want the heptathlon field scoring used 
+  Scenario: As an official I want the heptathlon field scoring used
     Given I have entered the competitors performance <value>
-    When I press the <button>    
+    When I press the <button>
     Then I should see the competitors score
 
   @Prio7
@@ -67,6 +56,12 @@ Feature: Allround scoring system
     Given I have chosen a competitor by <name>
     When I press "show score" for a specific competitor
     Then The competitors score is displayed as <score>
+
+  @prio10
+  Scenario: Resume the program after it was stopped.
+    Given that the program is stopped
+    Then  press start
+    Then  the program is runing
 
   @Prio11
   Scenario: As an official I want to be able to stop the program after each time a score is saved.

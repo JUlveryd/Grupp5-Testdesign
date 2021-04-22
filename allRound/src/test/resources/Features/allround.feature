@@ -68,3 +68,5 @@ Feature: Allround scoring system
 >>>>>>> branch 'main' of https://github.com/JUlveryd/Grupp5-Testdesign.git
 
 hejsan hejdå
+
+       blääää åååå

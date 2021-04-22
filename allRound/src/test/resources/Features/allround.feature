@@ -3,7 +3,7 @@ Feature: Allround scoring system
   @Prio1
   Scenario: As an official I want to be able to add competitors
     Given I have opened the program
-    When I enter a competitors name
+    When I have entered a competitors name <name>
     Then Competitors name is saved
 
   @Prio2
@@ -40,9 +40,9 @@ Feature: Allround scoring system
 
   @Prio9
   Scenario: As an official I want to be able see a competitors score whenever I want
-    Given I have chosen a competitor
-    When I press show data for a specific competitor
-    Then I should be able to see the competitors score
+    Given I have chosen a competitor by <name>
+    When I press "show score" for a specific competitor
+    Then The competitors score is displayed as <score>
 
   @Prio11
   Scenario: As an official I want to be able to stop the program after each time a score is saved.

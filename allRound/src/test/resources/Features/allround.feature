@@ -51,7 +51,7 @@ Feature: Allround scoring system
     And I have saved the data
     When I press show data I should be able to see the data
 
-  @prio09
+  @Prio9
   Scenario: Resume the program after it was stopped.
     Given that the program is stopped
     Then  press start

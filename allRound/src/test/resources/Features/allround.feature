@@ -7,18 +7,7 @@ Feature: Allround scoring system
     Then Competitors name is saved
 
   @Prio2
-  Scenario Outline: Title of your scenario outline
-    Given I want to write a step with <name>
-    When I check for the <value> in step
-    Then I verify the <status> in step
-
-    Examples:
-      | name  | value | status  |
-      | name1 | 5     | success |
-      | name2 | 7     | Fail    |
-
-  @Prio3
-  Scenario: Performance value
+  Scenario: As an offical i want to enter a performance value
     Given I have Performance results <value>
     And I have input Performance <value>
     When I press Save
@@ -67,6 +56,12 @@ Feature: Allround scoring system
     Given I have chosen a competitor by <name>
     When I press "show score" for a specific competitor
     Then The competitors score is displayed as <score>
+
+  @prio10
+  Scenario: Resume the program after it was stopped.
+    Given that the program is stopped
+    Then  press start
+    Then  the program is runing
 
   @Prio11
   Scenario: As an official I want to be able to stop the program after each time a score is saved.

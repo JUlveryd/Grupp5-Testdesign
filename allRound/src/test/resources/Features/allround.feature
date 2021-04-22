@@ -54,17 +54,9 @@ Feature: Allround scoring system
      Given The score should be in excel file
      And the score is saved into a excel file
      Then the officials should be able to see it in the excel file
-<<<<<<< HEAD
 
-=======
-     
-     @prio3
-     Scenario: not
-<<<<<<< HEAD
->>>>>>> branch 'main' of https://github.com/JUlveryd/Grupp5-Testdesign.git
-=======
-     ksdgbjkg
-     dkfjgndkjhdn
->>>>>>> branch 'main' of https://github.com/JUlveryd/Grupp5-Testdesign.git
-
-hejsan hejdå
+  @prio10
+     Scenario: Resume the program after it was stopped.
+    Given that the program is stopped
+    Then  press start
+    Then  the program is runing

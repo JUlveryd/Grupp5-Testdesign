@@ -54,4 +54,10 @@ Feature: Allround scoring system
      Given The score should be in excel file
      And the score is saved into a excel file
      Then the officials should be able to see it in the excel file
+<<<<<<< HEAD
 
+=======
+     
+     @prio3
+     Scenario: not
+>>>>>>> branch 'main' of https://github.com/JUlveryd/Grupp5-Testdesign.git

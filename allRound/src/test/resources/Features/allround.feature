@@ -8,7 +8,6 @@ Feature: Allround scoring system
     When i press submit
     Then Competitors name is saved
 
-
   @Prio2
   Scenario: As an offical i want to enter a performance value
     Given I have Performance results <value>

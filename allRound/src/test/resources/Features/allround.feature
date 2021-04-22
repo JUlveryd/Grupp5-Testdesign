@@ -1,9 +1,11 @@
 Feature: Allround scoring system
 
   @Prio1
-  Scenario: As an official I want to be able to add competitors
+  Scenario: As an official I want to be able to add a male or female competitors
     Given I have opened the program
-    When I have entered a competitors name <name>
+    And I have chosen male or female
+    And I have entered a competitors full name <name>
+    When i press submit
     Then Competitors name is saved
 
   @Prio2

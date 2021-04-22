@@ -36,13 +36,13 @@ Feature: Allround scoring system
     When I press the button    
     Then I should see the competitors score
     
-  @Prio3
+  @Prio5
   Scenario: As an official I want the heptathlon track scoring used 
     Given I have entered the competitors performance value
     When I press the button    
     Then I should see the competitors score
     
-  @Prio4
+  @Prio6
   Scenario: As an official I want the heptathlon field scoring used 
     Given I have entered the competitors performance value
     When I press the button    

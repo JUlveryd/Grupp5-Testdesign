@@ -26,6 +26,30 @@ Feature: Allround scoring system
     And I have input Performance <value>
     When I press Save
     Then the result <value> shod be saved
+    
+  @Prio3
+  Scenario: As an official I want the decathlon track scoring used 
+    Given I have entered the competitors performance value
+    When I press the button    
+    Then I should see the competitors score
+    
+  @Prio4
+  Scenario: As an official I want the decathlon field scoring used 
+    Given I have entered the competitors performance value
+    When I press the button    
+    Then I should see the competitors score
+    
+  @Prio3
+  Scenario: As an official I want the heptathlon track scoring used 
+    Given I have entered the competitors performance value
+    When I press the button    
+    Then I should see the competitors score
+    
+  @Prio4
+  Scenario: As an official I want the heptathlon field scoring used 
+    Given I have entered the competitors performance value
+    When I press the button    
+    Then I should see the competitors score
 
   @Prio8
   Scenario: As an official i want to be able to see all the current scores at any time

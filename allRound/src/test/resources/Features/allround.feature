@@ -41,9 +41,6 @@ Feature: Allround scoring system
     And I have entered competitors score
     And I have saved the data
     Then I should be able to stop the program
-<<<<<<< HEAD
-    Then I test now
-=======
 
     @Prio7
     Scenario: As an official I want to be able to save a competitors score.
@@ -57,4 +54,4 @@ Feature: Allround scoring system
      Given The score should be in excel file
      And the score is saved into a excel file
      Then the officials should be able to see it in the excel file
->>>>>>> branch 'main' of https://github.com/JUlveryd/Grupp5-Testdesign.git
+

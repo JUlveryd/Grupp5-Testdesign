@@ -33,7 +33,6 @@ Feature: Allround scoring system
     And I have entered competitors score
     And I have saved the data
     When I press show data I should be able to see the data
-    Then I should be able to
 
   @Prio11
   Scenario: As an official I want to be able to stop the program after each time a score is saved.

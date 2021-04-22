@@ -60,4 +60,11 @@ Feature: Allround scoring system
      
      @prio3
      Scenario: not
+<<<<<<< HEAD
 >>>>>>> branch 'main' of https://github.com/JUlveryd/Grupp5-Testdesign.git
+=======
+     ksdgbjkg
+     dkfjgndkjhdn
+>>>>>>> branch 'main' of https://github.com/JUlveryd/Grupp5-Testdesign.git
+
+hejsan

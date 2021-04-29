@@ -90,3 +90,15 @@ Feature: Allround scoring system
     Given I have chosen a competitor by <name>
     When I press "show score" for a specific competitor
     Then The competitors score is displayed as <score>
+
+  @Prio13
+  Scenario: As an official I want to be able to minimize the window
+    Given I have started the program
+    When I press the minimize button inte the corner
+    Then the program should minimize
+
+  @Prio14
+  Scenario: As an official I want to be able to choose a competitor from a drop-down list and load their values (if there are any).
+    Given I have started the program
+    When I press the drop-down list
+    Then the program should load the old values

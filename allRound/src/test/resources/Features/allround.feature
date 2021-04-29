@@ -5,7 +5,7 @@ Feature: Allround scoring system
     Given I have opened the program
     And I have chosen male or female
     And I have entered a competitors full name <name>
-    When i press submit
+    When I press submit
     Then Competitors name is saved
 
   @Prio2

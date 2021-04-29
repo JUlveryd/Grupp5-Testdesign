@@ -5,7 +5,7 @@ Feature: Allround scoring system
     Given I have opened the program
     And I have chosen male or female
     And I have entered a competitors full name <name>
-    When i press submit
+    When I press submit
     Then Competitors name is saved
 
   @Prio2
@@ -13,7 +13,7 @@ Feature: Allround scoring system
     Given I have Performance results <value>
     And I have input Performance <value>
     When I press Save
-    Then the result <value> shod be saved
+    Then the result <value> should be saved
 
   @Prio3
   Scenario: As an official I want the decathlon track scoring used
